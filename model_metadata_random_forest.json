@@ -1,0 +1,55 @@
+{
+  "model_name": "Random Forest",
+  "params": {
+    "n_estimators": 300,
+    "max_depth": 20,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt"
+  },
+  "feature_columns": [
+    "urlLength",
+    "specialCharsCount",
+    "hasKeyword",
+    "hasSpecialChar",
+    "hexCharsCount",
+    "digitsCount",
+    "dotCount",
+    "slashRatio",
+    "uppercaseCount",
+    "vowelsCount",
+    "consonantsCount",
+    "domainToUrlRatio",
+    "hasHttpWww",
+    "hasIp",
+    "hasExe",
+    "hasPort",
+    "hasBackslash",
+    "hasRedirect",
+    "hasRef",
+    "maxSub30"
+  ],
+  "metrics": {
+    "train": {
+      "accuracy": 0.9065468423230659,
+      "f1_score": 0.9000290036483537,
+      "recall": 0.8539399615707706,
+      "precision": 0.9513769363166954
+    },
+    "test": {
+      "accuracy": 0.893103579492123,
+      "f1_score": 0.8856877386450724,
+      "recall": 0.8406200113291107,
+      "precision": 0.9358616043915093
+    },
+    "confusion_matrix": [
+      [
+        75525,
+        4475
+      ],
+      [
+        12380,
+        65296
+      ]
+    ]
+  }
+}
